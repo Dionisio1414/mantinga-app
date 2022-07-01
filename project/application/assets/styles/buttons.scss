@@ -1,0 +1,149 @@
+@import '~/assets/styles/variables.scss';
+
+.btn-title {
+  font-family: 'Calibri';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn {
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: $color-black;
+  transition: $transition;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.15;
+  text-align: center;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 1;
+  border: 1px solid $color-primary-regular;
+  background-color: $color-primary-regular;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  :not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+    text-decoration: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &--golden {
+    background-color: transparent;
+    color: $color-golden;
+    border-color: $color-golden;
+
+    &:hover {
+      background-color: $color-golden-hover;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-secondary-dark;
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border-color: $color-white;
+    color: $color-white;
+
+    &:hover {
+      background-color: rgba($color-primary-regular, 0.1);
+    }
+  }
+
+  &--white {
+    background-color: $color-white;
+    border-color: $color-white;
+    color: $color-primary-regular;
+
+    &:hover {
+      background-color: rgba($color-primary-regular, 0.1);
+    }
+  }
+
+  &--white-with-border {
+    background-color: $color-white;
+    border-color: $color-primary-regular;
+    color: $color-primary-regular;
+
+    &:hover {
+      background-color: rgba($color-primary-regular, 0.1);
+    }
+  }
+
+  &--white-with-grey-border {
+    background-color: $color-white;
+    border-color: rgba(57, 71, 79, 0.37);;
+    color: $color-primary-regular;
+
+    &:hover {
+      background-color: rgba($color-primary-regular, 0.1);
+    }
+  }
+
+  &--white-with-golden-border {
+    background-color: $color-white;
+    border-color: $color-golden;
+    color: $color-primary-regular;
+
+    &:hover {
+      background-color: rgba($color-golden, 0.1);
+    }
+  }
+
+  &--golden-fill {
+    background-color: $color-golden;
+    border-color: $color-golden;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-golden;
+    }
+  }
+
+  &--transparent-with-border {
+    background-color: transparent;
+    border-color: $color-black;
+    color: $color-black;
+
+    &:hover {
+      background-color: rgba($color-primary-regular, 0.1);
+    }
+  }
+
+  &--alternative {
+    background-color: $color-primary-regular;
+    border-color: $color-primary-regular;
+    color: $color-white;
+
+    &:hover {
+      background-color: rgba($color-primary-regular, 0.9);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@mixin radio-input-icon {
+    $icon-size: 14px;
+    height: $icon-size;
+    width: $icon-size;
+    border-radius: 50%;
+    background-color: $color-white;
+    background-image: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 3px solid $color-white;
+    box-shadow: 0 0 0 1px $color-light-grey;
+}
+
+@mixin radio-input-icon-checked {
+    background-color: $color-sky-blue;
+    box-shadow: 0 0 0 1px $color-sky-blue;
+}

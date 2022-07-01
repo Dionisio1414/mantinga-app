@@ -1,0 +1,31 @@
+@import '~/assets/styles/variables.scss';
+
+@mixin media-min {
+    @media screen and (min-width: $breakpoint-min) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (min-width: $breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: $breakpoint-xl) {
+        @content;
+    }
+}

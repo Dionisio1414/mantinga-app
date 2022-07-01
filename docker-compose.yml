@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  app:
+    restart: always
+    image: node:12.20.0
+    volumes:
+      - ./project/application:/var/www/app
+    stdin_open: true
+    tty: true
+    environment:
+      - HOST=0.0.0.0
+    ports:
+      - "3000:3000"

@@ -1,0 +1,1 @@
+export const CONTENT_TYPE_PAGE_NAME: string = 'TOKEN_CONTENT_TYPE_PAGE_NAME'

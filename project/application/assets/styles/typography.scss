@@ -1,0 +1,221 @@
+@mixin h1 {
+  font-weight: 300;
+  font-size: 95px;
+  line-height: 128px;
+  letter-spacing: -1.5px;
+}
+
+@mixin h2 {
+  font-weight: 300;
+  font-size: 59px;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+}
+
+@mixin h3 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+@mixin h4 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+}
+
+@mixin h5 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+@mixin h6 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+}
+
+@mixin subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+}
+
+@mixin subtitle-bold {
+  @include subtitle;
+  font-weight: 700;
+}
+@mixin body-text1 {
+  font-family: $base-font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.h1 {
+  @include h1;
+}
+
+.h2 {
+  @include h2;
+}
+
+.h3 {
+  @include h3;
+}
+
+.h4 {
+  @include h4;
+}
+
+.h5 {
+  @include h5;
+}
+
+.h6 {
+  @include h6;
+
+  &--regular {
+    font-weight: 400;
+  }
+}
+
+.subtitle {
+  @include subtitle;
+
+  &--bold {
+    @include subtitle-bold;
+  }
+
+  &--link {
+    text-decoration: underline;
+  }
+}
+
+.body-text1 {
+  @include body-text1;
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--link {
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.body-text2 {
+  font-family: $base-font-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+}
+
+.body-text3 {
+  font-family: $base-font-family;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+}
+
+.caption {
+  font-family: $base-font-family;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+
+  &--medium {
+    font-weight: 500;
+  }
+}
+
+.overline {
+  font-family: $base-font-family;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.tab-title {
+  font-family: $base-font-family;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-family: $base-font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  max-width: 675px;
+}
+
+.link {
+  font-weight: 400;
+  font-family: $base-font-family;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  text-decoration: underline;
+}
+
+.truncate {
+  display: -webkit-box;
+  max-width: 500px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  &--2-lines {
+    -webkit-line-clamp: 2;
+  }
+
+  &--3-lines {
+    -webkit-line-clamp: 3;
+  }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}

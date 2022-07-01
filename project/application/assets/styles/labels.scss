@@ -1,0 +1,26 @@
+.label {
+    font-family: $base-font-family;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 24px;
+    &-icon {
+        margin-right: 12px;
+    }
+    &--grey {
+        display: inline-flex;
+        align-items: center;
+        background: $color-golden-light;
+        padding: 8px 14px;
+        font-weight: 400;
+        border-radius: 8px;
+        color: $color-primary-regular;
+    }
+    
+    &--golden {
+        background: $color-golden;
+        padding: 8px 12px;
+        font-weight: bold;
+        border-radius: 16px 0;
+        color: $color-white;
+    }
+}
